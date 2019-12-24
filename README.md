@@ -1,4 +1,4 @@
-Flight Reservation System Built using Spring Boot and Spring Security.I built this project for practice purpose.
+Flight Reservation System Built using Spring Boot, Spring Data JPA and Spring Security . 
 System User has two roles ADMIN and USER 
   
 USER can 
