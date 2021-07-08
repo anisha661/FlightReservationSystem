@@ -1,50 +1,39 @@
 <%@include file="common/header.jsp"%>
+ <div class="full-page">
+        <div class="row h-100">
+            <div class="col-4">
+                <div class="lt-left">
+                    <div class="form-wrapper">
+                        <h5 class="form-head">
+                            Login to Continue
+                        </h5>
+                        <form action="${contextPath}/login" method="POST" class="form-auth">
+                            <div class="${error != null ? 'has-error' : ''}">
+                                <span style="text-align:center;">${msg}</span>
+                                <div class="form-group">
+                                    <label for="username">Email</label>
+                                    <input type="text" name="username" id="username" class="form-control" placeholder="Your username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="*********">
+                                </div>
+                                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+                                <button type="submit" class="btn btn-primary" value="Login">Login</button>
+                                <span style="text-align:center;">${error}</span>
+                            </div>
+                        </form>
+                        <div class="form-redirect">
+                            <p>Dont have an account?<a href="${contextPath}/register">Signup</a> to continue</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="lt-right bg-primary">
 
-
-
-<div class="container">
-	<div class="row">
-
-		<div id="login" class="col-lg-9 col-md-8 col-sm-9 mx-auto">
-			<div class="card ">
-				<div class="card-header" style="text-align:center;">Login to continue</div>
-				<div class="card-body">
-					<form method="POST" action="${contextPath}/login"
-						class="form-signin">
-			
-
-						<div class="form-group ${error != null ? 'has-error' : ''}">
-							<div class="form-group">
-							<span style="text-align:center;">${msg}</span> 
-							</div>
-							<div class="form-group">
-							<input name="username" type="text" class="form-control" placeholder="Username" autofocus="true" />
-							</div>
-							 <div class="form-group">
-							 <input name="password" type="password" class="form-control" placeholder="Password" />
-							  </div>
-							 <div class="form-group">
-							 <span style="color: red;">${error}</span>
-							 </div>
-							<input type="hidden" name="${_csrf.parameterName}"
-								value="${_csrf.token}" />
-						 	<div class="form-group">
-						 	<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-						 	</div>
-							
-							<h4 class="text-center">
-								<a href="${contextPath}/register">Create an account</a>
-							</h4>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-
-
-
-<%@include file="common/footer.jsp"%>
+                </div>
+            </div>
+        </div>
+    </div>
 

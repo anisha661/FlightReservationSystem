@@ -14,7 +14,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.js"></script>
 
 <footer class="footer">
-&copy; Copyright 2018
+&copy; Copyright 2021
  </footer>
 </body>
 </html>
