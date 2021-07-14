@@ -36,13 +36,13 @@ public class FlightController {
 	
 	@org.springframework.web.bind.annotation.InitBinder
 	public void InitBinder(WebDataBinder binder) {
-		SimpleDateFormat dateFormat= new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat dateFormat= new SimpleDateFormat("yyyy-MM-dd");
 		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
 	}
 	
 	@RequestMapping(value="/displayFlight" ,method=RequestMethod.POST)
 	public String findFlight(@RequestParam("from")String from,@RequestParam("to")String to,
-			@RequestParam("departureDate") @DateTimeFormat(pattern="dd/MM/yyyy")Date departureDate,@RequestParam("no_of_passenger")String no_of_passenger,ModelMap modelMap) {
+			@RequestParam("departureDate") @DateTimeFormat(pattern="yyyy-MM-dd")Date departureDate,@RequestParam("no_of_passenger")String no_of_passenger,ModelMap modelMap) {
 		
 		logger.info("Inside findFlights() From:" + from + " TO:" + to + "Departure Date: " + departureDate +no_of_passenger +"no. of passenger");
 		List<Flight> flights=flightRepository.findFlight(from, to, departureDate,no_of_passenger);

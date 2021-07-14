@@ -9,9 +9,8 @@
 <title>Flight Reservation System</title>
 <link rel="stylesheet" href="${contextPath}/resource/css/variable.css" />
 <link rel="stylesheet" href="${contextPath}/resource/css/base.css" />
-<link rel="stylesheet" href="${contextPath}/resource/css/class.css" />
+<link rel="stylesheet" href="${contextPath}/resource/css/inner-pages.css" />
 </head>
 <body>
-
 </body>
 </html>

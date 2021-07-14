@@ -1,5 +1,7 @@
 package com.project.flightreservation.entities;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalTime;
 import java.util.Date;
 
@@ -15,6 +17,8 @@ public class Flight extends AbstractEntity {
 	private String operating_airline;
 	private String departure_city;
 	private String arrival_city;
+
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	private Date date_of_departure;
 	

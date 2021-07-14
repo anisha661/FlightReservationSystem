@@ -1,0 +1,21 @@
+
+.navbar {
+	background-color: #0b8a9f;
+}
+
+.footer {
+	flex-shrink: 0;
+	color: white;
+	background-color: #0b8a9f;
+	text-align: center;
+	padding: 30px;
+}
+
+.blk-wrap{
+    max-width: 560px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    padding: 40px;
+}
+
