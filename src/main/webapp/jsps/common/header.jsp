@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="${contextPath}/resource/css/variable.css" />
 <link rel="stylesheet" href="${contextPath}/resource/css/base.css" />
 <link rel="stylesheet" href="${contextPath}/resource/css/inner-pages.css" />
+<link rel="stylesheet" href="${contextPath}/resource/css/sidebar.css" />
 </head>
 <body>
 </body>

@@ -51,7 +51,7 @@ a{
 }
 
 a:hover{
-    color: rgba(var(--primary-color, 0.8));
+    color: var(--primary-color);
 }
 .form-row,.row{
     display: flex;
@@ -173,4 +173,19 @@ label{
 
 .form-auth{
     margin: 2rem 0;
+}
+
+.fixed{
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.wrapper{
+    padding-left: 300px;
+}
+
+.overflow{
+    overflow: hidden;
 }

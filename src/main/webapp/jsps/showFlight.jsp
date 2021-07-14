@@ -1,6 +1,6 @@
 
 <%@include file="common/header.jsp"%>
-<%@include file="common/navbar.jsp"%>
+<%@include file="common/sidebar.jsp"%>
 <div class="container">
 	<div>
 		<a type="button" class="btn btn-primary btn-md " href="/addflight">Add Flight</a>

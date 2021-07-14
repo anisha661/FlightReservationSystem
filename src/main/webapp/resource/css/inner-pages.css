@@ -1,12 +1,7 @@
-
-.navbar {
-	background-color: #0b8a9f;
-}
-
 .footer {
 	flex-shrink: 0;
 	color: white;
-	background-color: #0b8a9f;
+	background-color: var(--primary-color);
 	text-align: center;
 	padding: 30px;
 }
@@ -17,5 +12,10 @@
     border-radius: 20px;
     border: 1px solid var(--border-color);
     padding: 40px;
+}
+
+.blk-wrap__head{
+    margin-bottom: 50px;
+    text-align: center;
 }
 

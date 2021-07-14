@@ -1,5 +1,5 @@
 <%@include file="common/header.jsp"%>
- <div class="full-page">
+ <div class="full-page overflow">
         <div class="row h-100">
             <div class="col-4">
                 <div class="lt-left">

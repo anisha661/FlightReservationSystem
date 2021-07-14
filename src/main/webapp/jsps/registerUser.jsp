@@ -1,5 +1,5 @@
 <%@include file="common/header.jsp" %>
-<div class="full-page">
+<div class="full-page overflow">
         <div class="row h-100">
             <div class="col-7">
                 <div class="lt-left bg-primary">
@@ -62,5 +62,4 @@
             </div>
         </div>
     </div>
- <%@include file="common/footer.jsp" %>
   

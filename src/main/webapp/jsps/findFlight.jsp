@@ -1,11 +1,9 @@
 <%@include file="common/header.jsp"%>
-<%@include file="common/navbar.jsp"%>
+<%@include file="common/sidebar.jsp"%>
 
 <body>
-
 		<div class="wrapper">
                 <div class="container">
-		            <h2>Welcome ${pageContext.request.userPrincipal.name}</h2>
                     <div class="blk-wrap">
                         <div class="blk-wrap__head">
                             <h5>Search for Flights</h5>
@@ -51,15 +49,5 @@
                         </div>
                     </div>
                 </div>
-            </div>
-	<script>
-	
-	$( function() {
-	    $( "#departureDate" ).datepicker({
-	    	format: 'dd/mm/yyyy'
-	    });
-	  } );
-	 
-	</script>
-	
-	<%@include file="common/footer.jsp"%>
+	        <%@include file="common/footer.jsp"%>
+       </div>

@@ -1,5 +1,5 @@
 <%@ include file="common/header.jsp" %>
-<%@ include file="common/navbar.jsp" %>
+<%@ include file="common/sidebar.jsp" %>
 
 
 <div class="container">
